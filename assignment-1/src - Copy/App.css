@@ -1,0 +1,188 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #0f172a;
+  color: #e2e8f0;
+  line-height: 1.6;
+}
+
+.portfolio-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Navigation Bar */
+.navbar {
+  position: sticky;
+  top: 0;
+  background-color: rgba(15, 23, 42, 0.95);
+  backdrop-filter: blur(8px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 3rem;
+  border-bottom: 1px solid #334155;
+  z-index: 1000;
+}
+
+.nav-brand {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #38bdf8;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 1.5rem;
+}
+
+.nav-links a {
+  color: #94a3b8;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.nav-links a:hover {
+  color: #38bdf8;
+}
+
+/* Header / Hero Section */
+.header-hero {
+  text-align: center;
+  padding: 5rem 1.5rem 3rem;
+  background: radial-gradient(circle at top, #1e293b, #0f172a);
+}
+
+.header-hero h1 {
+  font-size: 2.8rem;
+  font-weight: 800;
+  color: #f8fafc;
+  margin-bottom: 0.5rem;
+}
+
+.highlight {
+  color: #38bdf8;
+}
+
+.header-hero p {
+  font-size: 1.25rem;
+  color: #94a3b8;
+}
+
+/* Main Layout & Sections */
+.main-content {
+  max-width: 900px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 2rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3.5rem;
+}
+
+.section-block {
+  background-color: #1e293b;
+  border: 1px solid #334155;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.2);
+}
+
+.section-title {
+  font-size: 1.5rem;
+  color: #38bdf8;
+  border-bottom: 2px solid #334155;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1.25rem;
+}
+
+/* Education Timeline */
+.edu-item {
+  margin-bottom: 1.25rem;
+}
+
+.edu-item:last-child {
+  margin-bottom: 0;
+}
+
+.edu-item h3 {
+  font-size: 1.15rem;
+  color: #f8fafc;
+}
+
+.edu-meta {
+  font-size: 0.9rem;
+  color: #94a3b8;
+  margin-top: 0.2rem;
+}
+
+/* Skills Badges */
+.skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.skill-tag {
+  background-color: #0f172a;
+  border: 1px solid #38bdf8;
+  color: #38bdf8;
+  padding: 0.4rem 0.9rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+/* Contact Info */
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  font-size: 1rem;
+}
+
+.contact-info strong {
+  color: #f8fafc;
+}
+
+/* Footer */
+.footer {
+  background-color: #0b1120;
+  border-top: 1px solid #1e293b;
+  text-align: center;
+  padding: 1.5rem;
+  color: #64748b;
+  font-size: 0.9rem;
+  margin-top: auto;
+}
+
+/* Responsive Breakpoints */
+@media (max-width: 640px) {
+  .navbar {
+    flex-direction: column;
+    gap: 0.8rem;
+    padding: 1rem;
+  }
+
+  .nav-links {
+    gap: 1rem;
+    font-size: 0.9rem;
+  }
+
+  .header-hero h1 {
+    font-size: 2.1rem;
+  }
+
+  .section-block {
+    padding: 1.25rem;
+  }
+}
